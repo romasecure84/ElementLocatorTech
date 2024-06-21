@@ -5,8 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class FirstTestNgClass {
-
+public class SecondTestNgClass {
     WebDriver driver;
 
     @BeforeTest
@@ -25,10 +24,10 @@ public class FirstTestNgClass {
     @Test(priority = 1)
     public void openWebsite() {
         System.out.println("Let's open the browser");
-        driver.get("https://www.google.com");
+        driver.get("https://www.facebook.com");
     }
 
-    @Test
+    @Test(priority = 2)
     public void signUp() {
         System.out.println("Signing up");
     }
